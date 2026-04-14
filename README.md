@@ -12,7 +12,7 @@ notebooks/
 ## Notebooks
 
 ### `notebooks/legal/ocr_langchain.ipynb`
-**PII desidentification pipeline for Spanish legal documents**
+**PII anonymisation pipeline for Spanish legal documents**
 
 End-to-end pipeline to anonymise sensitive documents before sending them to a cloud LLM:
 
@@ -22,7 +22,7 @@ End-to-end pipeline to anonymise sensitive documents before sending them to a cl
 4. **Cloud LLM analysis** — only anonymised text leaves the machine
 5. **De-anonymisation** — tokens replaced with originals in the final response
 
-OCR, detection and anonymisation run fully local. Only de-identified text reaches the cloud.
+OCR, detection and anonymisation run fully local. Only anonymised text reaches the cloud.
 
 ## Setup
 
