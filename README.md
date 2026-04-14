@@ -30,14 +30,16 @@ OCR, detection and anonymisation run fully local. Only anonymised text reaches t
 # Install uv (https://docs.astral.sh/uv/)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Install deps + register Jupyter kernel
+# Install deps
 uv sync
-uv run python -m ipykernel install --user --name coderunner --display-name "CodeRunner (uv)"
 uv run python -m spacy download es_core_news_sm
 
 # Pull models (Ollama must be running)
 ollama pull gemma4:e4b
 ollama pull lightonocr-2-1b
+
+# Open notebook
+uv run jupyter notebook notebooks/legal/ocr_langchain.ipynb
 ```
 
 Copy `.env.example` to `.env` and fill in your keys:
