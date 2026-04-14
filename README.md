@@ -11,7 +11,7 @@ notebooks/
 
 ## Notebooks
 
-### `notebooks/legal/ocr_langchain.ipynb`
+### `notebooks/legal/legal-redaction.ipynb`
 **PII anonymisation pipeline for Spanish legal documents**
 
 End-to-end pipeline to anonymise sensitive documents before sending them to a cloud LLM:
@@ -39,7 +39,7 @@ ollama pull gemma4:e4b
 ollama pull lightonocr-2-1b
 
 # Open notebook
-uv run jupyter notebook notebooks/legal/ocr_langchain.ipynb
+uv run jupyter notebook notebooks/legal/legal-redaction.ipynb
 ```
 
 Copy `.env.example` to `.env` and fill in your keys:
